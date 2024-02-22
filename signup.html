@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .box1{
+        background-color: black;
+        color:white;
+        }
+        input{
+            border: 1px solid Red;
+border-radius: 10px 0px;
+padding-left: 10px;
+background-color:black
+            }
+            
+            
+            #log{
+                color:red;
+                }
+                label{
+                  color: white!important;
+                }
+            
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo" id="logo" >
+      <a href="#" id="logo" style=" border: none;">SK College 🎭
+        <!-- <img src="https://source.unsplash.com/A8he8ah9suQ" alt="Logo"> -->
+      </a>
+    </div>
+    <ul class="nav-links">
+        <li id="hometop"><a href="/index.html#home">Home</a></li>
+        <li><a href="/index.html#about">About</a></li>
+        <li><a href="/index.html#academics">Academics</a></li>
+        <li><a href="/index.html#services">Admissions</a></li>
+        <li id="#homeend"><a href="/index.html#contact">Contact</a></li>
+        <li id="#signup"><a href="signup.html">Sign Up </a></li>
+        <li id="#login"><a href="login.html">Login</a></li>
+        <!-- 👉🏽 -->
+    </ul>
+    <div class="hamburger-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+<section class="bg-gray-100 h-screen flex items-center justify-center">
+
+  <div class="box1 bg-white p-8 rounded shadow-md max-w-md w-full">
+    <h1 class="text-2xl font-semibold mb-4 text-center">Sign Up</h1>
+    <form id="signup-form">
+      <div class="mb-4">
+        <label for="username" class="block text-gray-700">Username</label>
+        <input type="text" id="username" name="username" class="form-input mt-1 block w-full" required>
+      </div>
+      <div class="mb-4">
+        <label for="email" class="block text-gray-700">Email</label>
+        <input type="email" id="email" name="email" class="form-input mt-1 block w-full" required>
+      </div>
+      <div class="mb-4">
+        <label for="password" class="block text-gray-700">Password</label>
+        <input type="password" id="password" name="password" class="form-input mt-1 block w-full" required>
+      </div>
+      <div class="mb-4">
+        <button type="submit" class="bg-red-600 text-white px-4 py-2 rounded hover:bg-blue-600">Sign Up</button>
+      </div>
+    </form>
+    <p class="text-gray-600">Already have an account? <a id="log" href="login.html">Login</a></p>
+  </div>
+
+</section>
+
+
+  <!-- JavaScript -->
+  <script>
+    document.getElementById('signup-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      // Here you can add your JavaScript logic for form submission
+      // For example, you can send the form data to a server using AJAX
+      // or perform client-side validation
+    });
+  </script>
+
+<script src="script.js"></script>
+</body>
+</html>
